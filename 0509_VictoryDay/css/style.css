@@ -1,0 +1,184 @@
+﻿.flex {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+  align-items: stretch;
+}
+
+UL {   
+  margin: 0;
+}
+UL > LI {  /*дочерний селектор*/
+font-style: italic;
+}
+UL OL {   /*контекстный селектор*/
+  font-weight: bold;
+}
+
+A[href^="http://"] {  /*селектор атрибутов*/
+  font-weight: bold;
+}
+
+H1 {
+  text-align: center;
+}
+
+H2 {
+  text-align: center;
+}
+
+.nav {
+  text-align: center;
+  letter-spacing: 10px;
+}
+
+.galery {
+  margin: 15px 25px;
+  width: 320px;
+}
+.galery:hover {
+  -webkit-transform: scale(1.25);
+  -ms-transform: scale(1.25);
+  -moz-transform: scale(1.25);
+  -o-transform: scale(1.25);
+}
+.leftfoto {
+  float: left;
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 320px;
+}
+
+.rightfoto {
+  float: right;
+  margin: 20px 20px 0 20px;
+  width: 320px;
+}
+
+.center {
+  margin: 20px auto 0 auto;
+  display: block;
+}
+
+.map {
+	align-self: center;
+  animation: translating 10s linear infinite;
+  -webkit-animation:translating 10s linear infinite;
+  -moz-animation:translating 10s linear infinite;
+  -ms-animation:translating 10s linear infinite;
+  -o-animation:translating 10s linear infinite;
+}
+
+@keyframes translating {
+  0%   { transform: translate(0, 0); }
+  25%  { transform: translate(120px, 0);}
+  50%   { transform: translate(0, 0); }
+  75%  { transform: translate(-120px,0);}
+  100%   { transform: translate(0, 0);  }
+}
+  
+.marker {
+  list-style-image: url(../image/marker.png);
+}
+
+IMG + P::first-letter {  /*соседний селектор*/
+  font-size: 200%;
+}
+
+P {
+  text-align: justify;
+  padding: 0 20px 0 20px;
+}
+
+A {
+  color: #FF4500;
+  text-decoration: none;
+  transition-property: color;
+  transition-duration: 0.5s;
+  transition-timing-function: linear;
+}
+
+A:hover {
+  color: blue ; 
+}
+
+TABLE {
+  background: -moz-linear-gradient(45deg, rgba(255,0,0,1) 0%, rgba(255,255,0,1) 50%, rgba(255,0,0,1) 100%); /* ff3.6+ */ 
+background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, rgba(255,0,0,1)), color-stop(50%, rgba(255,255,0,1)), color-stop(100%, rgba(255,0,0,1))); /* safari4+,chrome */ 
+background: -webkit-linear-gradient(45deg, rgba(255,0,0,1) 0%, rgba(255,255,0,1) 50%, rgba(255,0,0,1) 100%); /* safari5.1+,chrome10+ */ 
+background: -o-linear-gradient(45deg, rgba(255,0,0,1) 0%, rgba(255,255,0,1) 50%, rgba(255,0,0,1) 100%); /* opera 11.10+ */ 
+background: -ms-linear-gradient(45deg, rgba(255,0,0,1) 0%, rgba(255,255,0,1) 50%, rgba(255,0,0,1) 100%); /* ie10+ */ 
+background: linear-gradient(45deg, rgba(255,0,0,1) 0%, rgba(255,255,0,1) 50%, rgba(255,0,0,1) 100%); /* w3c */ 
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff0000', endColorstr='#FF0000',GradientType=1 ); /* ie6-9 */ 
+  
+  border-collapse: collapse;
+border:0 solid white;
+  border-radius: 20px;
+  align-self: stretch;
+  margin: 20px 20px 0 20px;
+  text-align: center;
+  
+}
+
+BODY {
+  background: Gainsboro;
+  background-image: url(../image/background.jpg);
+  background-position: left bottom;
+  background-repeat: repeat;
+  font-family: SF UI Display;
+}
+  .tab input, .tab-content { display: none; }
+   .tab {
+    
+    margin-bottom: 10px; /* Расстояние между пунктами */
+   }
+   .tab-title {
+	color: #FF4500;
+    text-decoration: none;
+    padding-left: 20px;
+    padding-right: 20px; /* Поля вокруг текста */
+    display: block; /* Блочный элемент */
+    cursor: pointer; /* Вид курсора */
+   }
+    .tab-title:hover {
+	transition-property: color;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+	color: red;
+   }
+
+   .tab-content {
+    padding-top: 19.2px;
+	padding-left: 35px;
+    padding-right: 35px; /* Поля вокруг текста */
+   }
+   
+   .tab :checked ~ .tab-content {
+    display: block; /* Показываем содержимое */
+   }
+
+.tooltip{
+border-bottom: 3px dashed;}
+.tooltip span {
+	text-align: justify;
+    display: none;
+	margin-top: 20px;
+    margin-left: 8px;
+    padding: 2px;
+    width: 350px;
+}
+
+.tooltip:hover span {
+	position: absolute;
+    display: inline;
+    background: #ffffff;
+    border: 1px solid #cccccc;
+    color: #6c6c6c;
+}
+
+@font-face {
+  font-family: SF UI Display;
+  src: url(../fonts/SFUIDisplay-Regular.ttf) format("truetype");  
+}

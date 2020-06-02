@@ -1,0 +1,93 @@
+A[href^="http://"] { 
+  font-weight: bold
+}
+   
+A {
+  text-decoration: none;
+}
+
+H1 {
+  font-family: SF UI Display;
+  text-align: center;
+}
+
+H2 {
+  font-family: SF UI Display;
+  text-align: center;
+}
+
+.nav {
+  display: none;
+}
+
+.galery {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 300px;
+}
+
+.leftfoto {
+  float:left;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 320px;
+}
+
+.rightfoto {
+  float:right;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 320px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+IMG + P::first-letter {
+  font-size: 200%;
+}
+
+.map {
+  display: none;
+}
+
+.marker {
+  list-style-image: url(../image/marker.png);
+}
+
+P {
+  font-family: SF UI Display;
+  text-align: justify;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+P > A {
+  text-decoration: none;
+}
+
+LI {
+  font-family: SF UI Display;
+}
+
+TD {
+  text-align: center;
+}
+
+DIV.TABLE1 {
+  font-family: SF UI Display;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@font-face {
+  font-family: SF UI Display;
+  src: url(../fonts/SFUIDisplay-Regular.ttf) format("truetype");  
+}
