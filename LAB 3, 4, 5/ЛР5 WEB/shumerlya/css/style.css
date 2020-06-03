@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+@import url('https://fonts.googleapis.com/css?family=Exo+2');
+
+
+
+/* Изменение тега html*/
+html{
+    background-image: url(../image/background.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Roboto Condensed', sans-serif;
+    min-height: 100%;
+}
+
+/* Изменение тега body*/
+body{
+    border: 5px solid;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    background: linear-gradient(45deg, #BABABA, #fffafa);
+    padding-top: 20px;
+    background-attachment: fixed;
+    opacity: 0.9;
+    border-radius: 25px;
+}
+
+/* Изменение заголовка первого уровня*/
+h1{
+    text-align: center;
+    font-size: 30px;
+    opacity: 0.8;
+    color: #333333;
+    text-shadow: 0 0 2px rgb(255, 255, 255);
+}
+
+/* Изменение заголовка второго уровня*/
+h2{
+    text-align: center;
+    font-size: 24px;
+    opacity: 0.8;
+    color: #333333;
+    text-shadow: 0 0 2px rgb(255, 255, 255);
+    margin-left: 30px;
+}
+
+/* Абзац */
+p{
+    text-indent: 2em;
+    padding-bottom: 10px;
+    font-family: 'Exo 2', sans-serif;
+}
+/* Списки */
+li{
+    margin-left: 10px;
+    padding-bottom: 10px;
+    font-family: 'Exo 2', sans-serif;
+    text-indent: 20px;
+    text-align: justify;
+    padding-right: 30px;
+}
+
+/*Таблица*/
+table{
+    width:50%;
+    border: 1px solid;
+    background-color: #e6e6e6;
+}
+/* Перемещение ссылки на источник по правому краю таблицы*/
+table + .sourcelink{
+    text-indent: 58%;
+}
+
+/* Изменение стиля ссылок*/
+a:link, a:visited  { 
+
+    color : #ffa500;
+    text-decoration: none;
+    text-shadow: 0 0 2px rgb(255, 255, 255);
+} 
+/* При наведении*/
+a:hover {
+    color: red; /* Цвет ссылки */
+} 
+/*Изображение*/
+img{
+    width: 300px;
+    height: 300px;
+    margin: 10px 40px;
+    border: 1px solid;
+}
+
+/* Собственные классы*/ 
+
+/* Рисунок с описание */
+.sign {
+    float: right; 
+    padding: 3px;
+    margin: 10px 0 5px 5px;
+    display: block;
+}
+.sign figcaption {
+    text-align: center;
+    padding: 0 1%;
+}
+ 
+ /*Блок с текстом*/
+.TextBlock{
+    text-align: justify;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 14px;
+    color: #2b2b2b;
+    text-shadow: 0 0 2px rgb(255, 255, 255);
+    padding-left: 20px;
+}
+.TextBlock ol{
+    list-style-type: circle;
+}
+/* Изображения в галерее*/
+.galleryimages img{
+    transform:scale(0.8); 
+    transition-duration: 0.5s; 
+    opacity: 1; 
+}
+.TextBlock ol{
+    list-style-type: circle;
+}
+/* Изображения в галерее*/
+.galleryimages img{
+    transform:scale(0.8); 
+    transition-duration: 0.5s; 
+    opacity: 1; 
+    margin: 0 5px 5px 0;
+    width: 300px;
+    height: 235px;
+    margin-left: 80px;
+}
+/*При наведении*/
+.galleryimages img:hover{
+    transform:scale(1.2); 
+    box-shadow:0px 0px 30px gray; 
+    opacity: 1;
+    margin: 0 5px 5px 0;
+    width: 300px;
+    height: 235px;
+    margin-left: 80px;
+}
+/*При наведении*/
+.galleryimages img:hover{
+    transform:scale(1.2); 
+    box-shadow:0px 0px 30px gray; 
+    opacity: 1;
+}
+
+/* Начало и конец страницы*/
+.buttons, .copyright {
+    
+    padding-top: 1px;
+    padding-bottom: 1px;
+    display: block;
+    text-align: center; 
+    text-transform: uppercase;
+    text-shadow: 0 0 2px rgb(0, 0, 0);
+}
+/* Кнопки */
+.copyright  > .buttons{
+    display: inline-block;
+    letter-spacing: 3.5px;
+}
+.buttons a{
+    color : #FFFFFF;
+    text-shadow: 0 0 2px rgb(0, 0, 0);
+}
+.buttons a:hover{ 
+    transition-duration: 0.1s; 
+    color: red; /* Цвет ссылки */
+    opacity: 1; 
+    margin: 0 3px 3px 0;
+    font-size:20px;
+}
+
+/*Всплывающие подсказки*/
+.Tooltip {
+    display: inline-block;
+    position: relative;
+}
+.Tooltip:hover::after {
+    margin: 0px 40px;
+    content: attr(data-title);
+    position: absolute;
+    left: 0; right: 0; bottom: 10px;
+    z-index: 1;
+    background: rgba(0, 0, 0);
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 30px;
+}
+p[align]{
+    font-size: 20px;
+}
+

@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+@charset "windows-1251";
+/* Изменение заголовка первого уровня*/
+h1{
+    text-align: center;
+    font-size: 30px;
+    opacity: 0.8;
+    color: #e6e6e6;
+    text-shadow: 0 0 2px rgb(255, 255, 255);
+}
+
+body{
+	word-wrap: break-word;
+	height: 512px;
+	background: radial-gradient(#333333, #444444);
+	font-family: 'Oswald', sans-serif;
+	font-size:15px;
+}
+
+a:link, a:visited  { 
+    text-decoration: none;
+    color : #FFFFFF;
+    text-shadow: 0 0 2px rgb(0, 0, 0);
+} 
+/* При наведении*/
+a:hover {
+    color: red; /* Цвет ссылки */
+} 
+ul{
+	margin-left: -47px;
+}
+
+li{
+	list-style-type: none;
+	background: #707070; 
+	margin: 10px;
+	border-style: solid;
+	border-color: #d6d6d6;
+	border-radius: 10px; 
+	border-width: 1px;
+	text-align: center;
+}
+
+li:hover{
+	background:#EFEFEF;
+	transform: scale(1.06);
+	box-shadow: 7px 7px 3px #6A6A6A; 
+    -webkit-transform: translateX(-3px);
+    transform: translateX(-3px);
+}
+/*Скрываем список*/
+ul li ul{
+	display: none;
+}
+/*При наведении открываем*/
+ul li:hover ul{
+	display:block;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    animation-name: fly;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes fly {
+    0%   {left:0px; top:100px;}
+    25%  {left:100px; top:200px;}
+    50%  {left:200px; top:100px;}
+    75%  {left:100px; top:000px;}
+    100% {left:0px; top:100px;}
+}

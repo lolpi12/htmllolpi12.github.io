@@ -1,0 +1,33 @@
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>Таймер</title>
+  <script type="text/javascript">
+timeend= new Date(2020,5,30);//
+function time() {
+    today = new Date();// дата без параметров даёт текущую дату()
+    today = Math.floor((timeend-today)/1000);//получаем разинцу в секундах между разницей конца и текущей даты
+    tsec=today%60; today=Math.floor(today/60); if(tsec<10)tsec='0'+tsec;//
+    tmin=today%60; today=Math.floor(today/60); if(tmin<10)tmin='0'+tmin;//
+    thour=today%24; today=Math.floor(today/24);//
+	document.getElementById('days').innerHTML=today;
+	document.getElementById('hours').innerHTML=thour;
+	document.getElementById('minutes').innerHTML=tmin;
+	document.getElementById('seconds').innerHTML=tsec;
+    window.setTimeout("time()",1000);//
+}
+</script>
+<style>
+.table{
+	border: 2px solid;
+}
+</style>
+</head>
+<body onload="time()">
+<table class="table">
+<tr><td colspan=4 align=center><b> ДО КОНЦА 2019 УЧ.ГОДА </b></td></tr>
+<tr><td id="days"></td><td id="hours"></td><td id="minutes"></td><td id="seconds"></td></tr>
+<tr><td>ДНЕЙ</td><td>ЧАСОВ</td><td>МИНУТ</td><td>СЕКУНД</td></tr>
+</table>
+</body>
+</html>

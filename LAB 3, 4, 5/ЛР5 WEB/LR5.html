@@ -1,0 +1,24 @@
+﻿ <!DOCTYPE html>
+<html>
+<body>
+
+<p>Нажмите начать, чтобы начать игру.</p>
+
+<input type="button" id="myBtn" value="Начать" style="position:absolute">
+
+<script>
+var x = document.getElementById("myBtn");//получаем объект кнопки
+x.addEventListener("mouseover", event => {myFunction();});//добавляем событие для кнопки. при приближении мыши к кнопке запускаем ф-ию май функшен
+function myFunction() {
+    x.style.top=getRandomInt(100,500)+"px";// случайно изменяем расстояние от верха до кнопки
+    x.style.left=getRandomInt(100,900)+"px";// случайно изменяем расстояние слева до кнопки
+}
+
+function getRandomInt(min, max) {//ф-ия получения случайного числа, которую мы используем выше getRandomInt
+    return Math.floor(Math.random() * (max - min + 1)) + min;//
+}
+
+</script>
+
+</body>
+</html>
